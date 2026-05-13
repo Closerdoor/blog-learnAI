@@ -1,0 +1,19 @@
+# GitBook build output
+_book/
+
+# Node modules
+node_modules/
+
+# GitBook cache
+.gitbook/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log

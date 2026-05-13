@@ -1,0 +1,32 @@
+{
+  "title": "AI 学习笔记",
+  "author": "wicked",
+  "description": "从前端工程师转型 AI 应用开发的实战记录",
+  "language": "zh-hans",
+  "gitbook": ">=3.0.0",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins": [
+    "-highlight",
+    "prism",
+    "prism-themes",
+    "search-pro",
+    "back-to-top-button",
+    "code",
+    "copy-code-button",
+    "expand-active-chapter",
+    "chapter-fold"
+  ],
+  "pluginsConfig": {
+    "prism": {
+      "css": [
+        "prism-themes/themes/prism-atom-dark.css"
+      ]
+    },
+    "code": {
+      "copyButtons": true
+    }
+  }
+}
