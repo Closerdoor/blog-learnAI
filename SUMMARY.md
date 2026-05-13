@@ -6,6 +6,8 @@
   * [学习路线规划](planning/learning-roadmap.md)
   * [参考笔记收集](planning/reference-notes.md)
 
+* [Raw Notes](raw/README.md)
+
 * [第一阶段：基础工具链](docs/part1/README.md)
   * [Prompt Engineering](docs/part1/prompt-engineering.md)
   * [OpenAI API](docs/part1/openai-api.md)
