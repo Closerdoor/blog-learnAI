@@ -37,11 +37,29 @@
   - `大模型基础` - Token、Temperature、Context Window
   - `模型部署基础` - 量化、端侧推理
 
+### 4. AI Agent 全栈学习课程 (Callous-0923/agent-study)
+
+- **来源**: [GitHub](https://github.com/Callous-0923/agent-study)
+- **特点**: 36 章 Agent 全栈课程，覆盖 ReAct、Tool Calling、LangGraph、RAG、MCP、A2A、上下文工程、Agent 安全、可观测性等主题
+- **内容形态**: 每章是 `.py` 文件，形式为“讲义 + 可运行概念演示”
+- **适用**: 建立 Agent 知识地图、理解术语和架构分类、面试查漏补缺
+- **风险**: 仓库很新，覆盖面很宽，部分章节大量使用模拟代码，不适合作为主线教材从头刷到尾
+- **推荐学习方式**: 作为二线参考资料，只挑重点章节阅读
+- **优先章节**:
+  - `Ch1` - 第一个 Agent，理解 ReAct 循环和 Function Calling 基础
+  - `Ch4` - LangChain / LangGraph 框架概览
+  - `Ch9` - RAG 技术演进：Naive RAG、Advanced RAG、GraphRAG、Agentic RAG
+  - `Ch11` - Tool Calling 底层机制
+  - `Ch18` - Agent 安全与护栏
+  - `Ch19` - Agentic Workflow 设计模式
+  - `Ch20` - Context Engineering
+  - `Ch24` - Agent 可观测性
+
 ---
 
 ## 快速上手实践资源
 
-### 4. Generative AI for Beginners (Microsoft) ⭐推荐
+### 5. Generative AI for Beginners (Microsoft) ⭐推荐
 
 - **来源**: [GitHub](https://github.com/microsoft/generative-ai-for-beginners) | 111k stars
 - **特点**: 21课，Python + TypeScript 双语言示例
@@ -57,7 +75,7 @@
   | 6 | Lesson 15 | RAG 与向量数据库 | ⭐⭐ |
   | 7 | Lesson 17 | AI Agents | ⭐⭐ |
 
-### 5. LLM Cookbook (Datawhale) ⭐推荐
+### 6. LLM Cookbook (Datawhale) ⭐推荐
 
 - **来源**: [GitHub](https://github.com/datawhalechina/llm-cookbook) | 24k stars
 - **特点**: 吴恩达大模型系列课程中文版
@@ -72,7 +90,7 @@
   - 微调大语言模型
   - 搭建和评估高级 RAG 应用
 
-### 6. Neural Networks: Zero to Hero (Karpathy)
+### 7. Neural Networks: Zero to Hero (Karpathy)
 
 - **来源**: [GitHub](https://github.com/karpathy/nn-zero-to-hero) | 21.8k stars
 - **特点**: 从零构建神经网络，深入底层原理
@@ -139,6 +157,43 @@
 - 优先学习 **Vercel AI SDK**（TypeScript 原生）
 - 使用 **LangGraph.js** 而非 Python 版本
 - 前端 UI 可用 **Gradio** 或直接用 React
+
+---
+
+## 资料类型分类
+
+> 目标：优先选择能动手产出项目的资料，纯理论资料只作为路线判断和查漏补缺。
+
+### A. 手把手实操 / 可运行项目优先
+
+| 资料 | 类型 | 推荐程度 | 使用方式 |
+|------|------|----------|----------|
+| Generative AI for Beginners | 系统课程 + 代码示例 | ⭐⭐⭐ | 挑 Lesson 04-07、11、15、17，跟着跑示例 |
+| LLM Cookbook | Notebook 实操课程 | ⭐⭐⭐ | 用中文材料快速补 Prompt、API、RAG 基础 |
+| DeepLearning.ai Prompt Engineering for Developers | 短课 + 练习 | ⭐⭐⭐ | 用 2 小时建立 Prompt 基础 |
+| DeepLearning.ai Building Systems with the ChatGPT API | 短课 + 系统设计练习 | ⭐⭐⭐ | 学会把多个 LLM 调用组合成应用流程 |
+| Vercel AI SDK | 官方文档 + 示例项目 | ⭐⭐⭐ | 对接你的前端优势，重点看 `streamText`、`useChat`、Tool Calling |
+| LangGraph 官方文档和示例 | 官方教程 + 可运行示例 | ⭐⭐⭐ | Agent 阶段主线资料，重点学状态、节点、边、持久化 |
+| LlamaIndex 官方文档 | 官方教程 + RAG 示例 | ⭐⭐ | RAG 阶段用于构建资料馆助手原型 |
+| Callous-0923/agent-study | 讲义 + 可运行概念演示 | ⭐⭐ | 只挑 Ch1、Ch4、Ch9、Ch11、Ch19、Ch20 辅助理解 |
+
+### B. 理论 / 路线 / 查漏补缺资料
+
+| 资料 | 类型 | 推荐程度 | 使用方式 |
+|------|------|----------|----------|
+| 零基础学 AI | 基础路线和概念 | ⭐⭐ | 快速扫读，不作为主线 |
+| Harness 工程指南 | Agent 工程理论 | ⭐⭐ | 中后期理解 Agent 平台、MCP、运行时 |
+| AIGC-Interview-Book | 面试百科 / 查漏字典 | ⭐⭐ | 遇到概念不懂时查，不从头读 |
+| Neural Networks: Zero to Hero | 底层原理课程 | ⭐ | 当前先放后面，除非决定深入模型原理 |
+| Dify 源码 | 产品/平台研究 | ⭐⭐ | 有项目经验后再研究工作流封装 |
+| OpenClaw 源码 | 自驱 Agent 系统研究 | ⭐ | 当前只观察，不进入主线 |
+
+### C. 当前主线选择原则
+
+- **先项目，后百科**：优先选择能跑出代码、能沉淀笔记、能服务你的 Treasure / 五子棋项目的资料。
+- **官方资料优先**：框架变化快，LangGraph、Vercel AI SDK、OpenAI/Anthropic API 以官方文档为准。
+- **理论只回答问题**：当实操中遇到“为什么 Agent 要有状态”“为什么 RAG 检索不准”“为什么 Tool Calling 会乱调工具”时，再回到理论资料查。
+- **不按大而全资料顺序刷**：AIGC-Interview-Book、agent-study 都属于地图型资料，适合抽查，不适合连续刷。
 
 ---
 

@@ -2,6 +2,8 @@
 
 > 从前端工程师转型 AI 应用开发的实战记录
 
+📖 在线阅读：[GitBook - AI 学习笔记](https://maplestory-1.gitbook.io/maple/)
+
 ## 关于本项目
 
 这是一个记录 AI 学习过程的笔记仓库，主要聚焦于 **AI 应用开发** 和 **Agent 构建**。
