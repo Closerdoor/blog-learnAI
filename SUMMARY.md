@@ -3,6 +3,7 @@
 * [简介](README.md)
 
 * [规划文档](planning/README.md)
+  * [职业方向定位](planning/career-positioning.md)
   * [学习路线规划](planning/learning-roadmap.md)
   * [参考笔记收集](planning/reference-notes.md)
 
