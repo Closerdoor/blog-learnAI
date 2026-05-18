@@ -1,22 +1,32 @@
-# 第三阶段：Agent 核心：LangGraph 实战
+# 第三阶段：Tool Calling 与 Agent 工作流
 
-> 目标：攻克 Agent 最难点——状态管理与工具调用
-
-## 为什么选 LangGraph
-
-传统 LangChain 太重且难以调试，**LangGraph** 是目前工业界构建复杂、可控 Agent 的事实标准。
+> 目标：从单次问答升级为多步骤任务执行，逐步进入可控 Agent 工作流。
 
 ## 核心概念
 
-- Node (节点)
-- Edge (边)
-- Conditional Edges (条件边)
-- Persistence (记忆保存)
+- Tool Schema 设计
+- 工具选择逻辑
+- 工具调用失败处理
+- Node / Edge / Conditional Edge
+- State / Checkpoint / Memory
+- Human-in-the-loop
+- 中断和恢复
+
+## 技术栈
+
+- OpenAI Agents SDK
+- LangGraph
+- FastAPI
+- Vercel AI SDK
 
 ## 实操项目
 
-- 五子棋解说 Agent：分析棋局，实时解说胜率变化
+- GitHub 仓库评估器
+- 学习路线规划 Agent
+- 五子棋解说 Agent
 
-## 时间规划
+## 笔记页面
 
-第 9-16 周
+- LangGraph 基础
+- 状态管理
+- 工具调用

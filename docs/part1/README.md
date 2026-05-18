@@ -1,18 +1,24 @@
-# 第一阶段：基础工具链与 Prompt 工程
+# 第一阶段：AI 应用基础
 
-> 目标：能够通过代码精准控制 LLM，而不只是在网页对话
+> 目标：用 Python / TypeScript 构建最小 AI 应用闭环，而不只是在网页里对话。
 
 ## 核心技能
 
-- Prompt Engineering 基础技巧
 - OpenAI / Anthropic API 调用
-- Vercel AI SDK (TypeScript)
+- Prompt Engineering
+- Structured Output
+- Tool Calling 基础
+- Streaming 输出
+- FastAPI / Next.js 基础集成
 
 ## 实操项目
 
-- 为 Treasure 资料馆写批量抓取脚本
-- AI 自动生成简介和分类标签
+- AI 学习资料整理助手 v0
+- 输入学习资料链接，输出分类、推荐程度、适合阶段和 GitBook Markdown 草稿
 
-## 时间规划
+## 笔记页面
 
-第 1-4 周
+- Prompt Engineering
+- OpenAI API
+- Anthropic API
+- Vercel AI SDK

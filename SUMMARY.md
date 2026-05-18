@@ -9,7 +9,7 @@
 
 * [Raw Notes](raw/README.md)
 
-* [第一阶段：基础工具链](docs/part1/README.md)
+* [第一阶段：AI 应用基础](docs/part1/README.md)
   * [Prompt Engineering](docs/part1/prompt-engineering.md)
   * [OpenAI API](docs/part1/openai-api.md)
   * [Anthropic API](docs/part1/anthropic-api.md)
@@ -20,12 +20,12 @@
   * [向量数据库](docs/part2/vector-database.md)
   * [LlamaIndex](docs/part2/llamaindex.md)
 
-* [第三阶段：Agent 开发](docs/part3/README.md)
+* [第三阶段：Tool Calling 与 Agent 工作流](docs/part3/README.md)
   * [LangGraph 基础](docs/part3/langgraph-basics.md)
   * [状态管理](docs/part3/state-management.md)
   * [工具调用](docs/part3/tool-calling.md)
 
-* [第四阶段：多智能体协作](docs/part4/README.md)
+* [第四阶段：生产化与工程能力](docs/part4/README.md)
   * [CrewAI](docs/part4/crewai.md)
   * [AutoGen](docs/part4/autogen.md)
   * [Dify](docs/part4/dify.md)

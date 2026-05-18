@@ -1,6 +1,6 @@
 # Raw Notes
 
-> 零散笔记存放目录，由 AI 整理归纳到对应章节
+> 零散笔记存放目录。尚未归类的想法、代码片段、资料评价和问题先放这里，再定期整理到 `planning/` 或 `docs/`。
 
 ## 使用方式
 
@@ -11,6 +11,7 @@
 ## 文件命名建议
 
 - `prompt-notes.md` - Prompt 相关笔记
-- `langchain-notes.md` - LangChain 相关笔记
+- `rag-notes.md` - RAG 相关笔记
 - `agent-notes.md` - Agent 相关笔记
+- `resource-review.md` - 资料评估记录
 - 或任意你喜欢的名称
