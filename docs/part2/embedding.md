@@ -12,8 +12,8 @@
 
 ## 项目连接
 
-- GitBook 资料问答助手
-- Treasure 资料馆智能助手
+- CodePilot Lab：代码片段和项目文档检索
+- Personal Media Graph：作品、评论和笔记检索
 
 ## 待补充
 

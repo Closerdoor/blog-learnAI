@@ -130,7 +130,7 @@
 
 目标定位：
 
-> 面向企业场景的 Full-stack AI / Agent Engineer，重点掌握 RAG、Tool Calling、Workflow、Agent 状态管理、可观测性和部署。
+> 面向 Agentic Coding 和企业自动化场景的 Full-stack AI / Agent Engineer，重点掌握 RAG、Tool Calling、Workflow、Agent 状态管理、可观测性和部署。
 
 能力组合：
 
@@ -150,6 +150,28 @@
 
 ---
 
+## 长期聚焦方向
+
+长期更靠拢：
+
+> Agentic Coding / AI 软件工程工具。
+
+重点研究：
+
+- Claude Code / Codex / Cursor 类工具的架构模式
+- Coding Agent 如何理解代码库
+- Coding Agent 如何调用文件、Shell、Git、测试工具
+- 如何做人类审批、权限控制、执行日志和回滚
+- 如何从测试反馈中自动修复
+
+主作品方向：
+
+- CodePilot Lab：本地 Coding Agent Harness
+- Agent Tool Platform：插件化 Agent 工具平台
+- Personal Media Graph：长期兴趣产品，练 RAG / 图谱 / 推荐
+
+---
+
 ## 路线原则
 
 - **不走纯算法优先**：不把模型训练、论文和底层数学作为当前主线。
@@ -157,4 +179,4 @@
 - **不刷纯理论资料**：理论资料只在实操遇到问题时查。
 - **项目驱动学习**：用真实项目串起 API、RAG、工具调用、Agent、部署和评估。
 - **主攻 Agent，但从应用落地切入**：先做能用的 AI 应用，再逐步升级到可控 Agent 工作流。
-
+- **长期靠拢 Agentic Coding**：学习内容最终尽量服务 CodePilot Lab 这类 AI 软件工程工具。

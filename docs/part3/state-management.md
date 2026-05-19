@@ -14,8 +14,8 @@
 
 ## 项目连接
 
-- 学习路线规划 Agent
-- 生产级资料研究 Agent
+- CodePilot Lab：任务状态、工具结果、测试反馈、diff 审查
+- Agent Tool Platform：消息状态、插件执行状态、权限审批
 
 ## 待补充
 

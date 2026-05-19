@@ -13,8 +13,8 @@
 
 ## 项目连接
 
-- GitBook 资料问答助手
-- 资料馆智能助手
+- CodePilot Lab
+- Personal Media Graph
 
 ## 待补充
 

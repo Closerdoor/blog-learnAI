@@ -13,9 +13,8 @@
 
 ## 项目连接
 
-- GitHub 仓库评估器
-- 学习路线规划 Agent
-- 五子棋解说 Agent
+- CodePilot Lab：文件、Shell、Git、测试工具
+- Agent Tool Platform：插件工具注册、权限和路由
 
 ## 待补充
 

@@ -1,6 +1,6 @@
 # 学习路线规划
 
-> 当前路线：以 **Full-stack AI / Agent Engineer** 为目标，用项目驱动学习，而不是按资料顺序刷课。
+> 当前路线：以 **Full-stack AI / Agent Engineer** 为目标，长期靠拢 **Agentic Coding / AI 软件工程工具**，用短周期计划一步步推进。
 
 ---
 
@@ -8,9 +8,9 @@
 
 - **背景**: 前端工程师，熟悉 TypeScript/JavaScript
 - **现实工作**: 目前大量使用 Python
-- **目标方向**: 全栈 AI / Agent 工程
+- **目标方向**: 全栈 AI / Agent 工程，长期聚焦 Agentic Coding
 - **不走路线**: 纯算法、模型训练、纯 AI 前端
-- **核心策略**: 先落地 AI 应用，再深入 RAG、Tool Calling、Agent Workflow 和工程化
+- **核心策略**: 先掌握 AI 应用基础，再进入代码库理解、工具调用、Agent Workflow 和工程化
 - **开始时间**: 2026年5月
 
 ---
@@ -19,7 +19,7 @@
 
 目标不是“会用 AI”，而是：
 
-> 能把 AI 系统做成可靠产品，具备 RAG、工具调用、工作流编排、Agent 状态管理、评估、可观测性和部署能力。
+> 能把 AI 系统做成可靠产品，并逐步构建面向软件开发流程的 Coding Agent 工具。
 
 更具体的岗位定位：
 
@@ -28,6 +28,7 @@
 - AI Agent Engineer
 - LLM Application Engineer
 - Agent Workflow Engineer
+- Developer Tools / Agentic Coding Engineer
 
 ---
 
@@ -36,15 +37,15 @@
 ```text
 Python / TS AI 应用基础
         ↓
-RAG 与资料库工程
+代码库理解与 RAG / Memory
         ↓
-Tool Calling 与工作流
+Tool Calling 与 Tool Registry
         ↓
-Agent 状态管理与 LangGraph
+Coding Agent Workflow
         ↓
 生产化：评估、观测、安全、部署
         ↓
-作品集：可展示、可复盘、可面试讲解
+作品集：CodePilot Lab + Agent Tool Platform
 ```
 
 ---
@@ -60,6 +61,7 @@ Agent 状态管理与 LangGraph
 - [x] 明确不走纯算法/模型训练路线
 - [x] 明确不做纯 AI 前端壳子
 - [x] 将目标定位为 Full-stack AI / Agent Engineer
+- [x] 将长期方向收敛到 Agentic Coding / AI 软件工程工具
 - [x] 将资料分为实操类、理论类、查漏类
 - [ ] 建立“暂不学习清单”
 - [ ] 持续记录路线决策过程
@@ -67,6 +69,7 @@ Agent 状态管理与 LangGraph
 **产出文档**:
 
 - `planning/career-positioning.md`
+- `planning/project-direction.md`
 - `planning/reference-notes.md`
 - `planning/learning-roadmap.md`
 
@@ -85,14 +88,21 @@ Agent 状态管理与 LangGraph
 - Streaming 输出
 - FastAPI / Next.js 基础集成
 
-**推荐项目**: AI 学习资料整理助手 v0
+**短期练习**: API / Prompt / Structured Output / Tool Calling 最小练习
 
-功能：
+练习目标：
 
-- 输入一个学习资料链接或仓库名称
-- 判断资料类型：理论 / 实操 / 项目 / 面试 / 官方文档
-- 输出推荐程度、适合阶段、是否进入主线
-- 生成 GitBook Markdown 草稿
+- 调用一次模型
+- 让模型输出稳定 JSON
+- 让模型调用一个本地工具
+- 读取一个本地文件并总结
+- 用 FastAPI 包一层简单接口
+
+**和 CodePilot Lab 的关系**:
+
+- 任务分析需要 Structured Output
+- 文件读取需要工具调用
+- 后续 plan-edit-test loop 需要稳定的模型调用基础
 
 **优先资料**:
 
@@ -111,9 +121,9 @@ Agent 状态管理与 LangGraph
 
 ---
 
-## 阶段 2：RAG 与资料库工程
+## 阶段 2：代码库理解与 RAG / Memory
 
-**目标**: 构建能处理私有资料的知识库系统。
+**目标**: 让 AI 能理解一个代码项目或资料集合，为 Coding Agent 构建上下文。
 
 **核心能力**:
 
@@ -125,16 +135,23 @@ Agent 状态管理与 LangGraph
 - Rerank
 - RAG 评估
 - 幻觉和引用控制
+- 代码库文件扫描
+- 代码搜索 / 符号搜索
 
-**推荐项目**: GitBook 资料问答助手
+**短期练习**: Codebase Q&A
 
 功能：
 
-- 读取当前 GitBook Markdown 文档
+- 读取一个小型代码项目
 - 建立本地或云端向量索引
-- 支持询问“我现在该学什么”
-- 回答时引用具体笔记来源
+- 支持询问“这个函数在哪里”“这个模块做什么”
+- 回答时引用具体文件来源
 - 记录检索失败案例
+
+**长期项目连接**:
+
+- CodePilot Lab 的代码库检索
+- Personal Media Graph 的收藏内容检索
 
 **优先资料**:
 
@@ -153,9 +170,9 @@ Agent 状态管理与 LangGraph
 
 ---
 
-## 阶段 3：Tool Calling 与工作流
+## 阶段 3：Tool Calling 与 Tool Registry
 
-**目标**: 从单次问答升级为多步骤任务执行。
+**目标**: 从单次问答升级为可控工具调用，并形成可复用的工具注册机制。
 
 **核心能力**:
 
@@ -166,16 +183,24 @@ Agent 状态管理与 LangGraph
 - 人类确认
 - 简单工作流状态
 - API 服务化
+- Tool Registry
+- Permission Model
+- Audit Log
 
-**推荐项目**: GitHub 仓库评估器
+**短期练习**: Local Dev Agent Tools
 
 功能：
 
-- 输入 GitHub 仓库地址
-- 自动读取 README、目录和示例代码
-- 判断它是理论资料、实操教程、项目模板还是源码研究对象
-- 输出是否纳入主线，以及推荐阅读章节
-- 自动生成 GitBook 资料评估记录
+- 封装 `read_file`
+- 封装 `list_files`
+- 封装 `run_command`
+- 封装 `git_diff`
+- 对高风险工具加入确认机制
+
+**长期项目连接**:
+
+- CodePilot Lab 的 file / shell / git / test tools
+- Agent Tool Platform 的插件系统和工具路由
 
 **优先资料**:
 
@@ -193,7 +218,7 @@ Agent 状态管理与 LangGraph
 
 ## 阶段 4：Agent 状态管理与 LangGraph
 
-**目标**: 构建可控、可恢复、可观察的 Agent 工作流。
+**目标**: 构建可控、可恢复、可观察的 Coding Agent Workflow。
 
 **核心能力**:
 
@@ -205,16 +230,24 @@ Agent 状态管理与 LangGraph
 - 多步骤计划执行
 - Agent 评估
 
-**推荐项目**: 学习路线规划 Agent
+**主项目**: CodePilot Lab v0-v3
 
 功能：
 
-- 读取 GitBook 中的资料库
-- 根据当前时间、背景、目标生成学习计划
-- 自动判断哪些资料该看、哪些该跳过
-- 遇到不确定选择时向用户确认
-- 输出每周计划和学习日志草稿
+- 扫描代码库结构
+- 读取相关文件
+- 生成修改计划
+- 修改文件并展示 diff
+- 运行测试或检查命令
+- 根据失败结果继续修复
 - 记录每一步工具调用和决策原因
+
+版本：
+
+- v0：代码库读取 + 修改建议
+- v1：文件修改 + diff
+- v2：运行测试 + 自动修复
+- v3：LangGraph 状态流
 
 **优先资料**:
 
@@ -227,7 +260,6 @@ Agent 状态管理与 LangGraph
 
 - `docs/part3/langgraph-basics.md`
 - `docs/part3/state-management.md`
-- `docs/projects/gomoku-commentator.md`
 
 ---
 
@@ -247,16 +279,16 @@ Agent 状态管理与 LangGraph
 - Prompt / Agent 版本管理
 - 安全边界和工具沙箱
 
-**推荐项目**: 生产级资料研究 Agent
+**推荐项目**: CodePilot Lab v4 + Agent Tool Platform
 
 功能：
 
-- 支持多资料并发分析
+- 支持权限控制和工具分级
 - 支持任务状态追踪
-- 支持人工审批后写入 GitBook
+- 支持人工审批
 - 支持失败重试
 - 支持评估样例集
-- 有前端界面展示 Agent 执行过程
+- 有前端界面展示 Agent 执行过程和 trace
 
 **优先资料**:
 
@@ -275,35 +307,35 @@ Agent 状态管理与 LangGraph
 
 ## 实战项目顺序
 
-### 项目 1：AI 学习资料整理助手
+### 项目 1：CodePilot Lab
 
-- **阶段**: 1
-- **价值**: 直接服务当前 GitBook 和资料筛选需求
-- **技术栈**: Python / OpenAI API / Structured Output / Markdown
+- **阶段**: 2-5
+- **价值**: 主线求职作品，面向 Agentic Coding
+- **技术栈**: Python / LangGraph / Tool Calling / Git / Shell / Test Runner
 
-### 项目 2：GitBook 资料问答助手
+### 项目 2：Agent Tool Platform
 
-- **阶段**: 2
-- **价值**: 建立 RAG 能力，将学习笔记变成可查询知识库
-- **技术栈**: Python / LlamaIndex / Vector DB / RAG
+- **阶段**: 3-5
+- **价值**: 第二作品，由 QQ 机器人兴趣升级为插件化工具平台
+- **技术栈**: Python / Tool Registry / Plugin System / Permission / Audit Log
 
-### 项目 3：GitHub 仓库评估器
+### 项目 3：Personal Media Graph
 
-- **阶段**: 3
-- **价值**: 训练 Tool Calling、资料分析和结构化报告能力
-- **技术栈**: Python / GitHub API / Tool Calling / FastAPI
+- **阶段**: 2 起长期积累
+- **价值**: 长期兴趣产品，练 RAG、知识图谱、推荐和长期记忆
+- **技术栈**: Python / RAG / Knowledge Graph / Recommendation
 
-### 项目 4：学习路线规划 Agent
+### 项目 4：AI Web Game Studio
 
-- **阶段**: 4
-- **价值**: 进入 Agent 状态管理和工作流编排
-- **技术栈**: LangGraph / OpenAI Agents SDK / RAG / Human-in-the-loop
+- **阶段**: 兴趣实验
+- **价值**: 保留为个人兴趣，不纳入当前职业主线
+- **技术栈**: TypeScript / Web Game / Playwright
 
-### 项目 5：五子棋解说 Agent
+### 项目 5：学习辅助工具
 
-- **阶段**: 4-5
-- **价值**: 兴趣项目，适合验证工具调用、状态管理和前端展示
-- **技术栈**: LangGraph / Python / TypeScript / Streaming UI
+- **阶段**: 按需
+- **价值**: 服务学习过程，不作为求职作品主线
+- **例子**: GitBook 资料问答、学习路线规划、资料整理脚本
 
 ---
 
@@ -312,11 +344,11 @@ Agent 状态管理与 LangGraph
 | 阶段 | 状态 | 目标产出 |
 |------|------|----------|
 | 阶段 0：路线收敛与资料筛选 | 进行中 | 职业定位、资料分类、学习路线 |
-| 阶段 1：AI 应用最小闭环 | 待开始 | AI 学习资料整理助手 v0 |
-| 阶段 2：RAG 与资料库工程 | 待开始 | GitBook 资料问答助手 |
-| 阶段 3：Tool Calling 与工作流 | 待开始 | GitHub 仓库评估器 |
-| 阶段 4：Agent 状态管理与 LangGraph | 待开始 | 学习路线规划 Agent |
-| 阶段 5：生产化与工程能力 | 待开始 | 生产级资料研究 Agent |
+| 阶段 1：AI 应用最小闭环 | 待开始 | API / JSON / Tool Calling 小练习 |
+| 阶段 2：代码库理解与 RAG / Memory | 待开始 | Codebase Q&A |
+| 阶段 3：Tool Calling 与 Tool Registry | 待开始 | Local Dev Agent Tools |
+| 阶段 4：Agent 状态管理与 LangGraph | 待开始 | CodePilot Lab v0-v3 |
+| 阶段 5：生产化与工程能力 | 待开始 | CodePilot Lab v4 + Agent Tool Platform |
 
 ---
 
@@ -336,6 +368,9 @@ Agent 状态管理与 LangGraph
 - 将目标调整为 Full-stack AI / Agent Engineer
 - 确认 Agent 工程是主攻方向，但需要从 AI 应用、RAG、Tool Calling 逐步进入
 - 路线从“按主题学习”调整为“按岗位能力 + 项目产出”推进
+- 进一步将长期方向收敛到 Agentic Coding / AI 软件工程工具
+- 确认主作品为 CodePilot Lab，副作品为 Agent Tool Platform，长期兴趣产品为 Personal Media Graph
+- 确认后续采用短周期学习：用户完成一段学习后反馈，Codex 整理笔记、查漏补缺并制定下一段计划
 
 ---
 

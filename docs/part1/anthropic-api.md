@@ -12,8 +12,8 @@
 
 ## 项目连接
 
-- 学习资料整理助手：对比不同模型的资料分类稳定性
-- 学习路线规划 Agent：参考 Anthropic 的工作流和上下文工程思路
+- CodePilot Lab：参考 Anthropic 的 Agent 工作流和上下文工程思路
+- Agent Tool Platform：对比不同模型在工具选择上的稳定性
 
 ## 待补充
 

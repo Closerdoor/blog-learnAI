@@ -5,6 +5,7 @@
 * [规划文档](planning/README.md)
   * [职业方向定位](planning/career-positioning.md)
   * [学习路线规划](planning/learning-roadmap.md)
+  * [项目方向与作品集规划](planning/project-direction.md)
   * [参考笔记收集](planning/reference-notes.md)
 
 * [Raw Notes](raw/README.md)
@@ -31,7 +32,9 @@
   * [Dify](docs/part4/dify.md)
 
 * [实战项目](docs/projects/README.md)
-  * [资料馆智能助手](docs/projects/treasure-assistant.md)
-  * [五子棋解说 Agent](docs/projects/gomoku-commentator.md)
+  * [CodePilot Lab](docs/projects/codepilot-lab.md)
+  * [Agent Tool Platform](docs/projects/agent-tool-platform.md)
+  * [Personal Media Graph](docs/projects/treasure-assistant.md)
+  * [Web 游戏站点 / 五子棋实验](docs/projects/gomoku-commentator.md)
 
 * [资源收集](docs/resources/README.md)

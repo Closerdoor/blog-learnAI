@@ -19,8 +19,8 @@
 
 ## 实操项目
 
-- GitBook 资料问答助手
-- Treasure 资料馆智能助手
+- CodePilot Lab：代码库理解和上下文检索
+- Personal Media Graph：个人收藏内容的语义检索和推荐
 
 ## 笔记页面
 

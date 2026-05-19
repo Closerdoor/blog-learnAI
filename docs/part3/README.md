@@ -21,9 +21,8 @@
 
 ## 实操项目
 
-- GitHub 仓库评估器
-- 学习路线规划 Agent
-- 五子棋解说 Agent
+- CodePilot Lab
+- Agent Tool Platform
 
 ## 笔记页面
 

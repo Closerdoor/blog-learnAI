@@ -13,9 +13,9 @@
 
 ## 项目连接
 
-- AI 学习资料整理助手
-- GitHub 仓库评估器
-- 学习路线规划 Agent
+- CodePilot Lab
+- Agent Tool Platform
+- Personal Media Graph
 
 ## 待补充
 

@@ -12,8 +12,9 @@
 
 ## 项目连接
 
-- AI 学习资料整理助手：资料分类、推荐理由、GitBook 草稿生成
-- GitHub 仓库评估器：仓库价值判断和结构化报告生成
+- CodePilot Lab：任务理解、修改计划、执行总结
+- Agent Tool Platform：用户指令解析、工具选择说明
+- Personal Media Graph：内容分类、推荐理由生成
 
 ## 待补充
 

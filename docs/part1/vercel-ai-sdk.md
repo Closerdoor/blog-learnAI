@@ -13,9 +13,9 @@
 
 ## 项目连接
 
-- 学习资料整理助手前端界面
-- GitBook 资料问答助手聊天界面
-- Agent 执行过程可视化
+- CodePilot Lab 的 Agent 执行过程可视化
+- Agent Tool Platform 的 Web 控制台
+- Personal Media Graph 的搜索和推荐界面
 
 ## 待补充
 

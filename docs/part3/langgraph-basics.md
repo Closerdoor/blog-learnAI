@@ -14,9 +14,8 @@
 
 ## 项目连接
 
-- 学习路线规划 Agent
-- 五子棋解说 Agent
-- 生产级资料研究 Agent
+- CodePilot Lab：plan / edit / test / fix 工作流
+- Agent Tool Platform：多步骤工具调用和审批流程
 
 ## 待补充
 
