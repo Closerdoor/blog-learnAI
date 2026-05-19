@@ -6,6 +6,7 @@
   * [职业方向定位](planning/career-positioning.md)
   * [学习路线规划](planning/learning-roadmap.md)
   * [项目方向与作品集规划](planning/project-direction.md)
+  * [当前学习计划](planning/current-plan.md)
   * [参考笔记收集](planning/reference-notes.md)
 
 * [Raw Notes](raw/README.md)
