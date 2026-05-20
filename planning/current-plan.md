@@ -41,10 +41,29 @@ tool_calling_demo.py
 
 本轮只使用这些资料，不扩展新资料：
 
-1. DeepLearning.ai - Prompt Engineering for Developers
-2. OpenAI API Docs
-3. OpenAI Cookbook 中和 Structured Output / Tool Calling 相关的示例
-4. Generative AI for Beginners Lesson 04、05、11（可选，时间不够就先跳过）
+1. [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+   - DeepLearning.ai 短课，作为本轮 Prompt Engineering 的主线资料。
+   - 目标：理解如何写清晰指令、提供上下文、指定输出格式、做总结/分类/抽取/转换。
+
+2. [OpenAI API Docs](https://platform.openai.com/docs)
+   - OpenAI 官方文档，作为 API 调用、结构化输出和工具调用的一手参考。
+   - 本轮重点看：模型调用、Structured Outputs、Function Calling / Tools。
+
+3. [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
+   - OpenAI 官方示例仓库。
+   - 不需要从头读，只查本轮相关示例：Structured Output、Tool Calling、JSON 输出、Embeddings 后续再看。
+
+4. [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners)
+   - Microsoft 开源课程，Python + TypeScript 示例。
+   - 本轮可选章节：
+     - Lesson 04：Prompt Engineering Fundamentals
+     - Lesson 05：Advanced Prompts
+     - Lesson 11：Function Calling
+   - 时间不够可以先跳过，作为补充资料。
+
+5. [LLM Cookbook](https://github.com/datawhalechina/llm-cookbook)
+   - Datawhale 中文 Notebook 课程。
+   - 本轮可选：只看 Prompt Engineering 和 API 调用相关章节，用来补中文解释。
 
 暂时不看：
 
@@ -213,4 +232,3 @@ Codex 后续负责：
 - [ ] 能解释 Tool Calling 的基本流程
 
 完成后再进入下一段：代码库读取、文件工具和 CodePilot Lab v0 前置准备。
-
