@@ -41,19 +41,29 @@ tool_calling_demo.py
 
 本轮只使用这些资料，不扩展新资料：
 
-1. [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
-   - DeepLearning.ai 短课，作为本轮 Prompt Engineering 的主线资料。
-   - 目标：理解如何写清晰指令、提供上下文、指定输出格式、做总结/分类/抽取/转换。
+1. [hello-agents](https://github.com/datawhalechina/hello-agents)
+   - Datawhale 的中文 Agent 系统教程，作为本轮 Agent 入门主线资料。
+   - 本轮只看和基础能力相关的章节，不从头刷完整仓库。
+   - 优先阅读：
+     - 第 1 章：智能体的基本概念
+     - 第 3 章：智能体的基础模块
+     - 第 4 章：智能体的经典范式，重点理解 ReAct、Plan-and-Solve、Reflection
+     - 第 7 章：从 0 开始构建智能体框架，作为 CodePilot Lab 的架构启发
 
 2. [OpenAI API Docs](https://platform.openai.com/docs)
    - OpenAI 官方文档，作为 API 调用、结构化输出和工具调用的一手参考。
    - 本轮重点看：模型调用、Structured Outputs、Function Calling / Tools。
 
-3. [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
+3. [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+   - DeepLearning.ai 短课，作为 Prompt Engineering 补充资料。
+   - 如果时间有限，可以先看 hello-agents 和 OpenAI API Docs，再回来看这个短课。
+   - 目标：理解如何写清晰指令、提供上下文、指定输出格式、做总结/分类/抽取/转换。
+
+4. [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
    - OpenAI 官方示例仓库。
    - 不需要从头读，只查本轮相关示例：Structured Output、Tool Calling、JSON 输出、Embeddings 后续再看。
 
-4. [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners)
+5. [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners)
    - Microsoft 开源课程，Python + TypeScript 示例。
    - 本轮可选章节：
      - Lesson 04：Prompt Engineering Fundamentals
@@ -61,7 +71,7 @@ tool_calling_demo.py
      - Lesson 11：Function Calling
    - 时间不够可以先跳过，作为补充资料。
 
-5. [LLM Cookbook](https://github.com/datawhalechina/llm-cookbook)
+6. [LLM Cookbook](https://github.com/datawhalechina/llm-cookbook)
    - Datawhale 中文 Notebook 课程。
    - 本轮可选：只看 Prompt Engineering 和 API 调用相关章节，用来补中文解释。
 
@@ -73,6 +83,12 @@ tool_calling_demo.py
 - AIGC-Interview-Book
 - agent-study
 - Claude Code 架构分析
+
+说明：
+
+- hello-agents 现在作为 Agent 入门中文主线资料。
+- OpenAI API Docs 仍然是模型调用、结构化输出和工具调用的一手参考。
+- 不要因为 hello-agents 内容丰富就把全部章节一次刷完，本轮只服务“AI 应用基础 + Agent 前置能力”。
 
 ---
 
