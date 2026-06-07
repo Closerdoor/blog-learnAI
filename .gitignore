@@ -7,6 +7,11 @@ node_modules/
 # GitBook cache
 .gitbook/
 
+# Python environment and secrets
+.venv/
+.env
+project/.env
+
 # OS files
 .DS_Store
 Thumbs.db
