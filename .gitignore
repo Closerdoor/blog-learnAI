@@ -11,6 +11,8 @@ node_modules/
 .venv/
 .env
 project/.env
+__pycache__/
+*.pyc
 
 # OS files
 .DS_Store
