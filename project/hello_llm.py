@@ -3,6 +3,35 @@ import os
 from tavily import TavilyClient
 from openai import OpenAI
 import re
+from dotenv import load_dotenv
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+load_dotenv(PROJECT_ROOT / ".env", encoding="utf-8-sig")
+
+AGENT_SYSTEM_PROMPT = """
+你是一个可以使用工具的旅行助手。
+
+你必须严格按照下面格式输出：
+
+Thought: 说明你下一步要做什么
+Action: 工具调用或最终回答
+
+可用工具：
+1. get_weather(city="城市名")
+   - 查询指定城市当前天气。
+
+2. get_attraction(city="城市名", weather="天气信息")
+   - 根据城市和天气搜索适合游玩的景点。
+
+当你已经获得足够信息并准备回答用户时，使用：
+Action: Finish[最终回答]
+
+注意：
+- 每次只输出一个 Thought 和一个 Action。
+- 不要编造工具结果，必须等待 Observation。
+- Action 必须严格使用示例中的函数调用格式。
+""".strip()
 
 def get_weather(city: str) -> str:
     """
@@ -108,12 +137,13 @@ class OpenAICompatibleClient:
           
           
 # --- 1. 配置LLM客户端 ---
-# 请根据您使用的服务，将这里替换成对应的凭证和地址
-API_KEY = "YOUR_API_KEY"
-BASE_URL = "YOUR_BASE_URL"
-MODEL_ID = "YOUR_MODEL_ID"
-TAVILY_API_KEY="YOUR_Tavily_KEY"
-os.environ['TAVILY_API_KEY'] = "YOUR_TAVILY_API_KEY"
+# 配置从项目根目录的 .env 文件读取，避免把密钥写进代码。
+API_KEY = os.getenv("OPENAI_API_KEY")
+BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+MODEL_ID = os.getenv("LLM_MODEL", "gpt-4o-mini")
+
+if not API_KEY:
+    raise RuntimeError("未配置 OPENAI_API_KEY，请在项目根目录 .env 文件中设置。")
 
 llm = OpenAICompatibleClient(
     model=MODEL_ID,
